@@ -117,7 +117,7 @@ body{position:fixed;inset:0;width:100%}
 [data-state=bloomed] .dust{opacity:.85}
 @keyframes drift{50%{transform:translate(var(--x),var(--y))}}
 
-.reveal{position:absolute;left:0;right:0;bottom:calc(max(1.5rem,env(safe-area-inset-bottom)) + 1.6rem);z-index:6;text-align:center;opacity:0;pointer-events:none;transition:opacity .6s ease}
+.reveal{position:absolute;left:0;right:0;bottom:0;padding:3.5rem 1rem calc(max(1.5rem,env(safe-area-inset-bottom)) + 1.6rem);background:linear-gradient(to top,rgba(26,14,28,.92) 40%,rgba(26,14,28,0));z-index:6;text-align:center;opacity:0;pointer-events:none;transition:opacity .6s ease}
 [data-state=bloomed] .reveal{opacity:1;pointer-events:auto;transition:opacity 1s ease 2.4s}
 .reveal p{margin:0 0 .4rem;font-family:var(--serif);font-style:italic;font-size:1.45rem;color:var(--pink-light);text-shadow:0 1px 12px rgba(20,8,22,.8)}
 .replay{border:0;background:none;padding:.4rem .6rem;cursor:pointer;color:var(--muted);font-size:.85rem;letter-spacing:.04em}
@@ -144,7 +144,7 @@ body{position:fixed;inset:0;width:100%}
 
   <section class="stage" aria-label="Interactive letter and flower reveal">
     <div class="intro">
-      <h1>For the <em>soft-hearted.</em></h1>
+      <h1>For the <em>autistic.</em></h1>
       <p>Some things are meant to open slowly.</p>
     </div>
 
@@ -161,7 +161,7 @@ body{position:fixed;inset:0;width:100%}
     <svg id="lily" viewBox="0 0 640 820" role="img" aria-label="A pink lily in full bloom" aria-hidden="true"></svg>
 
     <div class="reveal" aria-live="polite">
-      <p>a little beauty, just for you</p>
+      <p>a little lily</p>
       <button class="replay" id="replay" type="button">fold it back ↺</button>
     </div>
   </section>
